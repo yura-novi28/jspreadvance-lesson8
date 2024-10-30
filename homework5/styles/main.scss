@@ -1,0 +1,113 @@
+@import 'reset';
+
+body{
+    font-family: sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid darkgray;
+    &__text{
+        font-size: 1.5em;
+        color: #000;
+        text-align: center;
+        line-height: 80px;
+    }
+}
+
+.main{
+    &-container{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+.bad-container{
+    margin-top: 15%;
+    width: 100%;
+    min-height: 300px; // hide
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.bad-words{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0 10px;
+    &__title{
+        color: #000;
+        font-size: 1.1em;
+        margin-right: 5px;
+    }
+    &__text{
+        color: red;
+        font-size: 1.1em;
+        max-width: 100%;
+    }
+}
+
+.form-bad{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    &__input-txt{
+        width: 78%;
+        height: 35px;
+        outline: 0;
+        border: 1px solid darkgray;
+        border-radius: 5px;
+        &:focus{
+            outline: 2px solid rgba(72, 182, 255, 0.55);
+            border: 1px solid rgb(72, 182, 255);
+        }
+    }
+    &__input-btn{
+        width: 10%;
+        height: 35px;
+        background-color: #f6c812;
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+        &:focus{
+            outline: 2px solid #f6c81292;
+        }
+        &--red{
+            background-color: #cc2343;
+            color: #fff;
+            &:focus{
+                outline: 2px solid #cc234282;
+            }
+        }
+    }
+}
+
+.form-txt{
+    &__textarea{
+        width: 100%;
+        height: 150px;
+        resize: none;
+        outline: 0;
+        border: 1px solid darkgray;
+        border-radius: 5px;
+        &:focus{
+            outline: 2px solid rgba(72, 182, 255, 0.55);
+            border: 1px solid rgb(72, 182, 255);
+        }
+        margin-bottom: 10px;
+    }
+    &__input-btn{
+        width: 100%;
+        height: 35px;
+        background-color: #32bb48;
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+        color: #fff;
+        &:focus{
+            outline: 2px solid #32bb4976;
+        }
+    }
+}

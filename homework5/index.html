@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <p class="header__text">List of prohibited words:</p>
+    </header>
+    <main class="main">
+        <div class="main-container">
+            <div class="bad-container">
+                <div class="bad-words">
+                    <p class="bad-words__title">Bad words:</p>
+                    <p id="textValueBad" class="bad-words__text"></p>
+                </div>
+                <form class="form-bad">
+                    <input id="inputTextBad" placeholder="word here..." class="form-bad__input-txt" type="text">
+                    <input id="buttonAdd" value="Add" class="form-bad__input-btn" type="button">
+                    <input id="buttonReset" value="Reset" class="form-bad__input-btn form-bad__input-btn--red" type="button">
+                </form>
+                <form class="form-txt">
+                    <textarea id="textareaCenzor" class="form-txt__textarea" placeholder="text here..." name="text-here"></textarea>
+                    <input id="buttonCenzor" value="Cenzor" class="form-txt__input-btn" type="button">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
